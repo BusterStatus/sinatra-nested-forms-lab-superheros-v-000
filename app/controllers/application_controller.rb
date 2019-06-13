@@ -15,7 +15,7 @@ class App < Sinatra::Base
         SuperHero.new(details)
       end
       
-      @ships = Ship.all
+      @ = Ship.all
       
       
       erb :team
