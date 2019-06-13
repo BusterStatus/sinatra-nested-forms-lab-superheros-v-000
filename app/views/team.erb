@@ -2,3 +2,12 @@
 
 <h2>Team Motto: <%= @team.motto %></h2>
 
+<% @heroes.each do |ship| %>
+
+  <div class="ship">
+    <p>Name: <%= ship.name %></p>
+    <p>Type: <%= ship.type %></p>
+    <p>Booty: <%= ship.booty %></p>
+  </div>
+
+<% end %>
